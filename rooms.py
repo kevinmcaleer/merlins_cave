@@ -1,3 +1,9 @@
+# Merlins Cave
+# This is the Rooms file.
+# Each room has a number, a title, a description, exits to other rooms
+# rooms may also optionally have mobs (monster objects), and items
+
+
 rooms = {
     1: {
         'title':'The Cave Entrance',
@@ -25,6 +31,9 @@ rooms = {
         'exits': {
             'n':4,
             's':2
+        },
+        'mobs': {
+            'frog',
         }
     },
     4: {
@@ -64,7 +73,8 @@ rooms = {
     },
     8: {
         'title':'Foul Smelling room',
-        'description':'This room has a fowl stench, like rotting fish. The room is covered in ancient spiderwebs.',
+        'description':'This room has a fowl stench, like rotting fish. The room is covered in ancient spiderwebs. '
+        'There is a note scratched into the wall - is says the secret to the maze is to go NSEW.',
         'exits': {
             'n':7,
             's':9
@@ -78,6 +88,9 @@ rooms = {
         },
         'items': {
             'gold',
+        },
+        'mobs': {
+            'spider'
         }
     },
     10: {
